@@ -1,0 +1,157 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title CRM Dashboard
+link(rel="stylesheet", href="./css.css")
+.container
+aside.sidebar
+.sidebar__logo
+img(src="./icons/dash.svg", alt="dash")
+h2 Dashboard
+span.sidebar__version v.01
+nav.menu
+ul
+li
+img(src="./icons/key-square.svg", alt="key-square")
+a.menu__link--first(href="#") Dashboard
+li
+img(src="./icons/3d-square.svg", alt="3d-square")
+a(href="#") Product
+img.menu__chevron(src="./icons/chevron.svg", alt="chevron")
+li
+img(src="./icons/Vector.svg", alt="Vector")
+a(href="#") Customers
+img.menu__chevron(src="./icons/chevron.svg", alt="chevron")
+li
+img(src="./icons/wallet-money.svg", alt="wallet-money")
+a(href="#") Income
+img.menu__chevron(src="./icons/chevron.svg", alt="chevron")
+li
+img(src="./icons/discount-shape.svg", alt="discount-shape")
+a(href="#") Promote
+img.menu__chevron(src="./icons/chevron.svg", alt="chevron")
+li
+img(src="./icons/message.svg", alt="message")
+a(href="#") Help
+img.menu__chevron(src="./icons/chevron.svg", alt="chevron")
+.profile
+img(src="./icons/Ellipse.svg", alt="Profile Picture")
+.profile__info
+p Evano
+span Project Manager
+main.main-content
+header
+h1
+| Hello Evano
+span 👋,
+section.customers
+.customers__header
+div
+h2 All Customers
+h3 Active members
+.customers__search-form
+button.customers__search-btn
+img.customers__search-icon(src="./icons/search.svg", alt="search")
+input.customers__search-input(type="text", placeholder="Search")
+table
+thead
+tr
+th Customer Name
+th Company
+th Phone Number
+th Email
+th Country
+th Status
+tbody
+tr
+td Jane Cooper
+td Microsoft
+td (225) 555-0118
+td jane@microsoft.com
+td United States
+td
+span.status.active Active
+tr
+td Floyd Miles
+td Yahoo
+td (205) 555-0100
+td floyd@yahoo.com
+td Kiribati
+td
+span.status.inactive Inactive
+tr
+td Ronald Richards
+td Adobe
+td (302) 555-0107
+td ronald@adobe.com
+td Israel
+td
+span.status.inactive Inactive
+tr
+td Marvin McKinney
+td Tesla
+td (252) 555-0126
+td marvin@tesla.com
+td Iran
+td
+span.status.active Active
+tr
+td Jerome Bell
+td Google
+td (629) 555-0129
+td jerome@google.com
+td Réunion
+td
+span.status.active Active
+tr
+td Kathryn Murphy
+td Microsoft
+td (406) 555-0120
+td kathryn@microsoft.com
+td Curaçao
+td
+span.status.active Active
+tr
+td Jacob Jones
+td Yahoo
+td (208) 555-0112
+td jacob@yahoo.com
+td Brazil
+td
+span.status.inactive Inactive
+tr
+td Jacob Jones
+td Yahoo
+td (208) 555-0112
+td jacob@yahoo.com
+td Brazil
+td
+span.status.inactive Inactive
+tr
+td Jacob Jones
+td Yahoo
+td (208) 555-0112
+td jacob@yahoo.com
+td Brazil
+td
+span.status.inactive Inactive
+.pagination
+span#pagination__info
+.pagination__page-numbers
+button#left_button
+svg.pagination__left(width="8", height="8", viewBox="0 0 5 7", fill="none", xmlns="http://www.w3.org/2000/svg")
+path(d="M2.936 6.392L0.176 3.668L2.936 0.944H4.664L1.892 3.668L4.664 6.392H2.936Z", fill="#404B52")
+span.pagination__number.active
+span.pagination__number__text 1
+span.pagination__number
+span.pagination__number__text 2
+span.pagination__number
+span.pagination__number__text 3
+span.pagination__number
+span.pagination__number__text 4
+span.pagination__points
+span ...
+span.pagination__number 40
+button#right_button
+svg.pagination__right(width="8", height="8", viewBox="0 0 5 7", fill="none", xmlns="http://www.w3.org/2000/svg")
+path(d="M0.344 0.944H2.072L4.832 3.668L2.072 6.392H0.344L3.116 3.668L0.344 0.944Z", fill="#404B52")
+script(src="./script.js")

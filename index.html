@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="./css.css">
+    <link href="/path/to/fontawesome/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                <img src="./icons/dash.svg" alt="dash">
+                <h2>Dashboard</h2>
+                <span class="sidebar__version">v.01</span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <img src="./icons/key-square.svg" alt="key-square">
+                        <a class="menu__link--first" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="./icons/3d-square.svg" alt="3d-square">
+                        <a href="#">Product</a>
+                        <img class="menu__chevron" src="./icons/chevron.svg" alt="chevron">
+                    </li>
+                    <li>
+                        <img src="./icons/Vector.svg" alt="Vector">
+                        <a href="#">Customers</a>
+                        <img class="menu__chevron" src="./icons/chevron.svg" alt="chevron">
+                    </li>
+                    <li>
+                        <img src="./icons/wallet-money.svg" alt="wallet-money">
+                        <a href="#">Income</a>
+                        <img class="menu__chevron" src="./icons/chevron.svg" alt="chevron">
+                    </li>
+                    <li>
+                        <img src="./icons/discount-shape.svg" alt="discount-shape">
+                        <a href="#">Promote</a>
+                        <img class="menu__chevron" src="./icons/chevron.svg" alt="chevron">
+                    </li>
+                    <li>
+                        <img src="./icons/message.svg" alt="message">
+                        <a href="#">Help</a>
+                        <img class="menu__chevron" src="./icons/chevron.svg" alt="chevron">
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <img src="./icons/Ellipse.svg" alt="Profile Picture">
+                <div class="profile__info">
+                    <p>Evano</p>
+                    <span>Project Manager</span>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Hello Evano <span>👋,</span></h1>
+            </header>
+            <section class="customers">
+                <div class="customers__header">
+                    <div>
+                        <h2>All Customers</h2>
+                        <h3>Active members</h3>
+                    </div>
+                    <div class="customers__search-form">
+                        <button class="customers__search-btn"><img class="customers__search-icon"
+                                src="./icons/search.svg" alt="search"></button>
+                        <input class="customers__search-input" type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer Name</th>
+                                <th>Company</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Cooper</td>
+                                <td>Microsoft</td>
+                                <td>(225) 555-0118</td>
+                                <td>jane@microsoft.com</td>
+                                <td>United States</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Floyd Miles</td>
+                                <td>Yahoo</td>
+                                <td>(205) 555-0100</td>
+                                <td>floyd@yahoo.com</td>
+                                <td>Kiribati</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Adobe</td>
+                                <td>(302) 555-0107</td>
+                                <td>ronald@adobe.com</td>
+                                <td>Israel</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Marvin McKinney</td>
+                                <td>Tesla</td>
+                                <td>(252) 555-0126</td>
+                                <td>marvin@tesla.com</td>
+                                <td>Iran</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jerome Bell</td>
+                                <td>Google</td>
+                                <td>(629) 555-0129</td>
+                                <td>jerome@google.com</td>
+                                <td>Réunion</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kathryn Murphy</td>
+                                <td>Microsoft</td>
+                                <td>(406) 555-0120</td>
+                                <td>kathryn@microsoft.com</td>
+                                <td>Curaçao</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jacob Jones</td>
+                                <td>Yahoo</td>
+                                <td>(208) 555-0112</td>
+                                <td>jacob@yahoo.com</td>
+                                <td>Brazil</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jacob Jones</td>
+                                <td>Yahoo</td>
+                                <td>(208) 555-0112</td>
+                                <td>jacob@yahoo.com</td>
+                                <td>Brazil</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jacob Jones</td>
+                                <td>Yahoo</td>
+                                <td>(208) 555-0112</td>
+                                <td>jacob@yahoo.com</td>
+                                <td>Brazil</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <span id="pagination__info"></span>
+                    <div class="pagination__page-numbers">
+                        <button id="left_button"><svg class="pagination__left" width="8" height="8" viewBox="0 0 5 7"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.936 6.392L0.176 3.668L2.936 0.944H4.664L1.892 3.668L4.664 6.392H2.936Z"
+                                    fill="#404B52" />
+                            </svg>
+                        </button>
+                        <span class="pagination__number active"><span class="pagination__number__text">1</span></span>
+                        <span class="pagination__number"><span class="pagination__number__text">2</span></span>
+                        <span class="pagination__number"><span class="pagination__number__text">3</span></span>
+                        <span class="pagination__number"><span class="pagination__number__text">4</span></span>
+                        <span class="pagination__points"><span>...</span></span>
+                        <span class="pagination__number">40</span>
+                        <button id="right_button"><svg class="pagination__right" width="8" height="8" viewBox="0 0 5 7"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.344 0.944H2.072L4.832 3.668L2.072 6.392H0.344L3.116 3.668L0.344 0.944Z"
+                                    fill="#404B52" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
